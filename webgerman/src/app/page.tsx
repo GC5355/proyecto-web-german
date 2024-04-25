@@ -8,9 +8,7 @@ export default function Home() {
 
 
         <div className="space-x-20">
-          <Button>Español</Button>
-          <Button>English</Button>
-          <Button>German</Button>
+          LANDING PAGE
         </div>
 
       </div>
