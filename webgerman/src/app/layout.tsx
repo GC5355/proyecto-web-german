@@ -4,7 +4,7 @@ import "./styles/globals.css";
 import { Inter as FontSans } from "next/font/google"
 
 import { cn } from "@/lib/utils"
-import {Navbar} from "@/components/ui/navbar";
+import {Navbar} from "@/components/ui/Navbar";
 import {NavigationMenu} from "@/components/ui/navigation-menu";
 import Footer from "@/components/ui/Footer";
 
