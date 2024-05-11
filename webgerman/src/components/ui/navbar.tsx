@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Icons } from '@/components/icons'
+import { Icons } from '@/constants/icons'
 import Image from "next/image"
 import { nav_links } from '../../constants/navlinks'
 
