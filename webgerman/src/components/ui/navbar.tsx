@@ -57,8 +57,14 @@ export const Navbar = () => {
     <nav className={`grid grid-cols-8 bg-slate-200 border-y-2 border-slate-400 drop-shadow-md pl-5 py-4 justify-center content-center ${isScrolled ? 'transition-opacity duration-500 ease-in opacity-50' : 'transition-opacity duration-500 ease-out opacity-100'} `}>
       <Link href="/" className="col-span-4 space-x-4 ">
         <Image src={fotoRedondaPepe} alt="logo" width={50} height={50} className="inline-block" />
-        <span className="hidden sm:inline-block font-semibold text-2xl font-montserrat">Agustin Pardo Motz</span>
-      </Link>
+        <span
+  onClick={() => handleLinkClick('Inicio')}
+  className={`hidden sm:inline-block font-semibold text-2xl font-montserrat ${
+    selectedEnlace === 'Inicio' ? '' : ''
+  }`}
+>
+  Agustin Pardo Motz
+</span>      </Link>
 
       <ul className="hidden col-start-5  col-span-3  lg:flex content-center space-x-10 ml-11 items-center justify-center pt-2">
         {nav_links.map((link, i) => (
