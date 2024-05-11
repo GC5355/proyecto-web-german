@@ -1,28 +1,31 @@
+'use client'
+
 import Image from "next/image";
-import { Button } from "@/components/ui/button"
+import foto1 from '@/components/imagenes/foto1jpg.jpg';
 import * as React from "react"
-import Autoplay from "embla-carousel-autoplay"
- 
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import Bio from "./bio/page";
+
 
 export default function Home() {
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-      <div>
+    <main className="flex min-h-screen flex-col items-center justify-between pb-24 ">
 
 
-        <div className="space-x-20">
-          LANDING PAGE
-        </div>
-
+      <div className="bg-cover bg-center h-screen">
+        <Image src={foto1} alt="foto" className="bg-blend-multiply" />
       </div>
-    </main>
+
+      <h1 className="font-montserrat font-normal text-6xl tracking-widest text-slate-50 absolute items-center  pt-64 select-none">HOLA PEPE</h1>
+      
+      <div className="pt-14">
+        <Bio />
+      </div>
+
+
+
+
+    </main >
   );
 }
